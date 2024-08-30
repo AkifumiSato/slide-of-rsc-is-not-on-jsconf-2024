@@ -255,6 +255,14 @@ layout: fact
 <span v-mark="{ at: 1, color: 'red', type: 'underline'}" class="font-bold">コンポーネント指向なSSRを実現するためのアーキテクチャであることがわかる</span>
 
 ---
+layout: image
+
+image: /data-fetch-history.png
+
+backgroundSize: contain
+---
+
+---
 layout: section
 ---
 
