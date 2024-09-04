@@ -27,14 +27,13 @@ React Server Componentsとは何であって何でないのか
   - Next.js
   - Rust
   - テスト設計
-  - チーム開発
+  - アジャイル
 - Activity
   - https://zenn.dev/akfm
-  - [JS Conf 2023](https://main--remarkable-figolla-a694f0.netlify.app/1)
-  - [Vercel meetup](https://zesty-basbousa-04576f.netlify.app/1)
-  - [Node学園42](https://youtu.be/ONMIjHfitHM?t=9139)
   - [Rust入門本の執筆](https://www.shuwasystem.co.jp/book/9784798067315.html)
-  - etc
+  - [Offers - Next.js v15 アップデート解説イベント](https://offers-jp.connpass.com/event/328878/)
+  - [JS Conf 2023](https://main--remarkable-figolla-a694f0.netlify.app/1)
+  - etc...
 
 ---
 
@@ -154,11 +153,11 @@ layout: fact
 layout: fact
 ---
 
-## React Server Components<br>≠Server Components
+## Server Components<br>≠<br>React Server Components
 
 ---
 
-# React Server Components=アーキテクチャ
+# 「React Server Components」はアーキテクチャ名
 
 前述の実装例は全てReact Server Componentsの一部である
 
@@ -180,26 +179,29 @@ layout: section
 
 現状Next.jsのみがサポートしているため、誤解されがち
 
-- React Server ComponentsをNext.jsがサポートしている
-- 他のフレームワークもサポートしつつある(対応中のもの含む)
-  - [Remix](https://remix.run)
-  - [Vike](https://vike.dev)
-  - [RedwoodJS](https://redwoodjs.com)
+- React関連機能
+  - Server Components
+  - Client Components(`"use client;"`)
+  - Server Actions(`"use server;"`)
+  - React Cache
+  - Streaming SSR
+  - etc...
+- Next.js固有の機能
+  - Cache
+  - etc...
 
 ---
 
 # 従来より複雑？
 
-個人的な意見: 総合的に見てシンプル
+筆者の主観だが、正しく比較すればシンプルになっていると思う
 
-- Pages Router
-  - 共通化しづらい`getServerSideProps`
-  - Propsのバケツリレー
-  - データ操作のためにtRPCやGraphQLの併用
-- App Router
-  - コンポーネント指向なデータ取得
-  - 組み込みでデータ操作が可能
-  - より高いパフォーマンスやシンプルな抽象化
+| 項目                   | 従来                 | RSC                  |
+| ---------------------- | -------------------- | -------------------- |
+| データフェッチ         | フレームワーク依存   | 非同期コンポーネント |
+| データ操作             | 3rd party library    | Server Actions       |
+| バンドルサイズ         | 最適化に限界があった | zero bundle size     |
+| コードスプリッティング | 開発者が意識         | 自動で行われる       |
 
 ---
 
@@ -213,7 +215,7 @@ layout: section
   - Reactはコンポーネント指向=CSS・JSをカプセル化可能
   - React Server Componentsでは同一データフェッチをメモ化して重複を排除
 
-<span v-mark="{ at: 1, color: 'red', type: 'underline'}" class="font-bold">共通点を見出し「同じ」と主張してるに過ぎない</span>
+TODO: PHPの実装例とRSCの実装例
 
 ---
 
@@ -261,6 +263,13 @@ image: /data-fetch-history.png
 
 backgroundSize: contain
 ---
+
+---
+
+memo
+
+- 過去のWebはテキストベース
+- 「StreamingでDOMのバイナリっぽいものを送る」という過去多くの人が夢見てきたやり方に取り組んでいる、意欲的なPJ
 
 ---
 layout: section
