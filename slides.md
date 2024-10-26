@@ -260,8 +260,6 @@ layout: section
 
 <span v-mark="{ at: 1, color: 'red', type: 'underline'}" class="font-bold">コンポーネント指向なSSRを実現するためのアーキテクチャであることがわかる</span>
 
-[//]: # "Excalidraw: https://excalidraw.com/#json=EQL1J-CGv4UDz71bCSn20,r_Zmn6bC4EM6cehZbwPc2Q"
-
 ---
 
 <div class="w-full h-full flex justify-center items-center">
@@ -277,13 +275,13 @@ layout: section
 ---
 
 <div class="w-full h-full flex justify-center items-center">
-<img src="/architecture-ssr.png" alt="Next.js Pages Router" class="h-300px">
+<img src="/architecture-ssr.png" alt="Next.js Pages Router" class="h-400px">
 </div>
 
 ---
 
 <div class="w-full h-full flex justify-center items-center">
-<img src="/architecture-rsc.png" alt="Next.js App Router(RSC)" class="h-300px">
+<img src="/architecture-rsc.png" alt="Next.js App Router(RSC)" class="h-400px">
 </div>
 
 ---
