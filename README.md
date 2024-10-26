@@ -1,10 +1,10 @@
-# Slide of Web JSConf JP 2024
+# Slide of Tokyo Node Gakuen 2024 - RSC
 
 ## Slide
 
 - [slides.md](slides.md)
-- [github pages](https://akifumisato.github.io/slide-of-jsconfjp-2024/1)
+- [github pages](https://akifumisato.github.io/slide-of-tng-2024-rsc/1)
 
 ## Event
 
-- [JSConf JP 2024](https://jsconf.jp/2024/)
+TBW
