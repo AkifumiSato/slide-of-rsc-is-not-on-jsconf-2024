@@ -238,17 +238,18 @@ memo: https://qiita.com/peka2/items/273be01065a921833878
 layout: section
 ---
 
-# React Server Components<br>とは何か(再考)
-
----
-layout: fact
----
-
-## React Server Componentsとは<br>*コンポーネント指向SSRアーキテクチャ*である
+# React Server Components<br>とは何か
 
 ---
 
-# _コンポーネント指向SSRアーキテクチャ_
+# React Server Componentsとは何か
+
+1. 従来のReactから責務拡張したもの
+2. コンポーネント指向アーキテクチャ
+
+---
+
+# コンポーネント指向アーキテクチャ
 
 過去の技術の螺旋と比較する
 
@@ -259,13 +260,34 @@ layout: fact
 
 <span v-mark="{ at: 1, color: 'red', type: 'underline'}" class="font-bold">コンポーネント指向なSSRを実現するためのアーキテクチャであることがわかる</span>
 
----
-layout: image
+[//]: # "Excalidraw: https://excalidraw.com/#json=EQL1J-CGv4UDz71bCSn20,r_Zmn6bC4EM6cehZbwPc2Q"
 
-image: /data-fetch-history.png
-
-backgroundSize: contain
 ---
+
+<div class="w-full h-full flex justify-center items-center">
+<img src="/architecture-legacy.png" alt="リクエスト指向SSR" class="h-300px">
+</div>
+
+---
+
+<div class="w-full h-full flex justify-center items-center">
+<img src="/architecture-csr.png" alt="コンポーネント指向CSR" class="h-300px">
+</div>
+
+---
+
+<div class="w-full h-full flex justify-center items-center">
+<img src="/architecture-ssr.png" alt="Next.js Pages Router" class="h-300px">
+</div>
+
+---
+
+<div class="w-full h-full flex justify-center items-center">
+<img src="/architecture-rsc.png" alt="Next.js App Router(RSC)" class="h-300px">
+</div>
+
+---
+
 
 ---
 
