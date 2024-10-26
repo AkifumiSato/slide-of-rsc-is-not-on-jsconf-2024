@@ -15,9 +15,9 @@ transition: slide-left
 mdc: true
 ---
 
-# React Server Components再考
+# RSC instanceof ...
 
-React Server Componentsとは何であって何でないのか
+<p class="text-xl">React Server Componentsとは何であって何でないのか</p>
 
 ---
 
@@ -30,9 +30,10 @@ React Server Componentsとは何であって何でないのか
   - アジャイル
 - Activity
   - https://zenn.dev/akfm
-  - [Rust入門本の執筆](https://www.shuwasystem.co.jp/book/9784798067315.html)
+    - [Next.jsの考え方](https://zenn.dev/akfm/books/nextjs-basic-principle)
   - [Offers - Next.js v15 アップデート解説イベント](https://offers-jp.connpass.com/event/328878/)
   - [JS Conf 2023](https://main--remarkable-figolla-a694f0.netlify.app/1)
+  - [Rust入門本の執筆](https://www.shuwasystem.co.jp/book/9784798067315.html)
   - etc...
 
 ---
@@ -51,7 +52,7 @@ React Server Componentsとは何であって何でないのか
 layout: section
 ---
 
-# React Server Components<br>とは何か
+# 「React Server Components」<br>とは何か
 
 ---
 transition: fade
@@ -93,7 +94,7 @@ transition: fade
 
 コメント可否が選択できる、ブログ記事コンポーネントの例
 
-```tsx {all|2|8}
+```tsx {all|2|4,8}
 // comment-editor.tsx
 "use client";
 
@@ -134,7 +135,7 @@ export async function addComments(formData: FormData) {
 
 ---
 
-# 問題: React Server Componentsとは？
+# 問題: 「React Server Components」とは？
 
 前述の実装例において、React Server Componentsにあたるのはどれでしょう？
 
@@ -167,11 +168,13 @@ layout: fact
 
 ![react.devのキャプチャ](/rsc-doc-capture.png)
 
+<Arrow x1="360" y1="260" x2="260" y2="260" color="red" />
+
 ---
 layout: section
 ---
 
-# React Server Componentsとは<br>何でないのか
+# 「React Server Components」<br>とは何でないのか
 
 ---
 
