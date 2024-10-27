@@ -263,36 +263,26 @@ layout: section
 ---
 
 <div class="w-full h-full flex justify-center items-center">
-<img src="/architecture-legacy.png" alt="リクエスト指向SSR" class="h-300px">
+<img src="/legacy.png" alt="リクエスト指向SSR" class="h-220px">
 </div>
 
 ---
 
 <div class="w-full h-full flex justify-center items-center">
-<img src="/architecture-csr.png" alt="コンポーネント指向CSR" class="h-300px">
+<img src="/csr.png" alt="コンポーネント指向CSR" class="h-350px">
 </div>
 
 ---
 
 <div class="w-full h-full flex justify-center items-center">
-<img src="/architecture-ssr.png" alt="Next.js Pages Router" class="h-400px">
+<img src="/ssr.png" alt="Next.js Pages Router" class="h-350px">
 </div>
 
 ---
 
 <div class="w-full h-full flex justify-center items-center">
-<img src="/architecture-rsc.png" alt="Next.js App Router(RSC)" class="h-400px">
+<img src="/rsc.png" alt="Next.js App Router(RSC)" class="h-350px">
 </div>
-
----
-
-
----
-
-memo
-
-- 過去のWebはテキストベース
-- 「StreamingでDOMのバイナリっぽいものを送る」という過去多くの人が夢見てきたやり方に取り組んでいる、意欲的なPJ
 
 ---
 layout: section
