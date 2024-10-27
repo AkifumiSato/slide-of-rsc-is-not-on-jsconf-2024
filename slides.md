@@ -283,13 +283,13 @@ transition: fade
 ---
 
 <div class="w-full h-full flex justify-center items-center">
-<img src="/rsc.png" alt="React Server Components" class="h-350px">
+<img src="/rsc-ssr.png" alt="React Server Components with SSR" class="h-350px">
 </div>
 
 ---
 
 <div class="w-full h-full flex justify-center items-center">
-<img src="/rsc-ssr.png" alt="React Server Components with SSR" class="h-350px">
+<img src="/rsc.png" alt="React Server Components" class="h-350px">
 </div>
 
 ---
