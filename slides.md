@@ -263,25 +263,33 @@ layout: section
 ---
 
 <div class="w-full h-full flex justify-center items-center">
-<img src="/legacy.png" alt="リクエスト指向SSR" class="h-220px">
+<img src="/legacy.png" alt="Web Backend & Micro Service" class="h-220px">
 </div>
 
 ---
 
 <div class="w-full h-full flex justify-center items-center">
-<img src="/csr.png" alt="コンポーネント指向CSR" class="h-350px">
+<img src="/csr.png" alt="React with CSR fetch" class="h-350px">
 </div>
 
 ---
 
 <div class="w-full h-full flex justify-center items-center">
-<img src="/ssr.png" alt="Next.js Pages Router" class="h-350px">
+<img src="/ssr.png" alt="React with SSR" class="h-350px">
+</div>
+
+---
+transition: fade
+---
+
+<div class="w-full h-full flex justify-center items-center">
+<img src="/rsc.png" alt="React Server Components" class="h-350px">
 </div>
 
 ---
 
 <div class="w-full h-full flex justify-center items-center">
-<img src="/rsc.png" alt="Next.js App Router(RSC)" class="h-350px">
+<img src="/rsc-ssr.png" alt="React Server Components with SSR" class="h-350px">
 </div>
 
 ---
