@@ -15,7 +15,7 @@ transition: slide-left
 mdc: true
 ---
 
-# RSC instanceof ...
+# What RSC is(not)?
 
 <p class="text-xl">React Server Componentsとは何であって何でないのか</p>
 
@@ -43,6 +43,7 @@ mdc: true
 - 今日話すこと
   - React Server Componentsとは何か
   - React Server Componentsとは何でないか
+  - React Server Componentsと従来のアーキテクチャ
   - React Server Componentsの今後
 - 今日はなさないこと
   - React Server Componentsの機能の詳細
@@ -52,7 +53,7 @@ mdc: true
 layout: section
 ---
 
-# 「React Server Components」<br>とは何か
+# React Server Components<br>とは何か
 
 ---
 transition: fade
@@ -68,7 +69,7 @@ import db from "@/db";
 import { CommentEditor } from "comment-editor";
 
 async function Post({ id }: { id: string }) {
-  // セキュア・シンプルにサーバーリソースにアクセスできる
+  // サーバーリソースにアクセスできる
   const post = await db.posts.get(id);
 
   return (
@@ -135,7 +136,7 @@ export async function addComments(formData: FormData) {
 
 ---
 
-# 問題: 「React Server Components」とは？
+# 問題: React Server Componentsとは？
 
 前述の実装例において、React Server Componentsにあたるのはどれでしょう？
 
@@ -158,7 +159,7 @@ layout: fact
 
 ---
 
-# 「React Server Components」はアーキテクチャ名
+# React Server Componentsはアーキテクチャ名
 
 前述の実装例は全てReact Server Componentsの一部である
 
@@ -174,7 +175,7 @@ layout: fact
 layout: section
 ---
 
-# 「React Server Components」<br>とは何でないのか
+# React Server Components<br>とは何でないのか
 
 ---
 
@@ -218,47 +219,30 @@ layout: section
   - Reactはコンポーネント指向=CSS・JSをカプセル化可能
   - React Server Componentsでは同一データフェッチをメモ化して重複を排除
 
-TODO: PHPの実装例とRSCの実装例
-
 ---
 
 # islandアーキテクチャ？
 
-TBW: 2層アーキテクチャと言う面では似ている、ただしパフォーマンスやコンポーネント指向データフェッチは実現できてない
+これらは従来よりWeb開発でよく採用される、2層アーキテクチャ
+
+- PHP+jQuery
+- islandアーキテクチャ
+- React Server Components
 
 ---
 
 # GraphQLを置き換えるもの？
 
-TBW: BFF層に絞って考えると、精神的後継と捉えることはできる。ただし、全てのGraphQLを置き換えるわけがない。
+RSCはGraphQLの精神的後継
 
-memo: https://qiita.com/peka2/items/273be01065a921833878
+- GraphQLもRSCも、FacebookはじめMetaの大規模プロダクトを支える技術基盤として考案された
+- 最初のRFCはRelayやGraphQLを先導してきた、[Joe Savona氏](https://x.com/en_js)が書いた
 
 ---
 layout: section
 ---
 
-# React Server Components<br>とは何か
-
----
-
-# React Server Componentsとは何か
-
-1. 従来のReactから責務拡張したもの
-2. コンポーネント指向アーキテクチャ
-
----
-
-# コンポーネント指向アーキテクチャ
-
-過去の技術の螺旋と比較する
-
-1. リクエスト指向SSR^[従来のWebフレームワークにあったHTML生成はレガシーSSRと考える]: Web MVC
-2. コンポーネント指向CSR: React with CSR
-3. リクエスト指向SSR+コンポーネント指向CSR: Next.js Pages Router
-4. コンポーネント指向SSR: React Server Components
-
-<span v-mark="{ at: 1, color: 'red', type: 'underline'}" class="font-bold">コンポーネント指向なSSRを実現するためのアーキテクチャであることがわかる</span>
+# React Server Components<br>と従来のアーキテクチャ
 
 ---
 
@@ -317,6 +301,13 @@ layout: section
 ---
 
 # まとめ
+
+React Server Componentsとは
+
+- React Server Componentsはアーキテクチャ名
+- Facebookのような巨大プロダクトの基盤技術になりうる技術として考案された
+- 従来の技術とは螺旋的違いがあり、サーバー側におけるコンポーネント指向データフェッチを実現するもの
+- GraphQLの精神的後継な一面もある
 
 ---
 layout: section
