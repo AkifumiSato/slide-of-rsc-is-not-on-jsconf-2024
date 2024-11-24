@@ -1,4 +1,4 @@
-# Slide of Tokyo Node Gakuen 2024 - RSC
+# Slide of JS Conf JP 2024 - RSC
 
 ## Slide
 
