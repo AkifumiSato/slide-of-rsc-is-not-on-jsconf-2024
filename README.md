@@ -12,4 +12,6 @@
 
 ## Event
 
-TBW
+JS Conf JP
+
+https://www.youtube.com/watch?v=k68gPt0LI_g
