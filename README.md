@@ -3,7 +3,7 @@
 ## Slide
 
 - [slides.md](slides.md)
-- [github pages](https://akifumisato.github.io/slide-of-tng-2024-rsc/1)
+- [github pages](https://akifumisato.github.io/slide-of-rsc-is-not-on-jsconf-2024/1)
 
 ### Excalidraw
 
